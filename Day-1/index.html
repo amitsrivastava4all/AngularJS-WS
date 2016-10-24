@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greet App</title>
+    <script>
+    function sayWelcome(){
+        var firstName = document.getElementById("firstname").value;
+        var lastName=document.getElementById("lastname").value;
+        var msg = "Welcome "+firstName+" "+lastName;
+        document.getElementById("message").innerHTML=msg;
+    }
+    </script>
+</head>
+<body>
+   <table>
+       <tr>
+           <td><label for="firstname">First Name</label></td>
+           <td><input type="text" id="firstname" placeholder="Type First Name Here"></td>
+       </tr>
+        <tr>
+           <td><label for="lastname">Last Name</label></td>
+           <td><input type="text" id="lastname" placeholder="Type Last Name Here"></td>
+       </tr>
+       <tr>
+           <td><button onclick="sayWelcome()">Greet</button></td>
+           <td><button>Clear</button></td>
+       </tr>
+   </table> 
+   <fieldset>
+       <legend>Output</legend>
+       <h1 id="message"></h1>
+   </fieldset>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
