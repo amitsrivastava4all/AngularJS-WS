@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greet App</title>
+    <script src="angular.min.js">
+   
+    </script>
+</head>
+<body ng-app>
+   <table>
+       <tr>
+           <td><label for="firstname">First Name</label></td>
+           <td><input type="text" ng-model="firstname" placeholder="Type First Name Here"></td>
+       </tr>
+        <tr>
+           <td><label for="lastname">Last Name</label></td>
+           <td><input type="text" ng-model="lastname" placeholder="Type Last Name Here"></td>
+       </tr>
+       <tr>
+           <td><button onclick="sayWelcome()">Greet</button></td>
+           <td><button>Clear</button></td>
+       </tr>
+   </table> 
+   <fieldset>
+       <legend>Output</legend>
+       <h1>{{firstname+lastname}}</h1>
+   </fieldset>
+   <input type="text" ng-init="qu=1" placeholder="Type Quantity Here" ng-model="qu">
+   <input type="text" ng-init="pr=1000" placeholder="Type Price Here" ng-model="pr">
+   {{pr*qu}}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
